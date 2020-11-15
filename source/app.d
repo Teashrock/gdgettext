@@ -9,5 +9,9 @@ string outputFile;
 
 void main(string[] args)
 {
-    
+    auto help = getopt(
+        args,
+        "o", outputFlagDefault, outputFlagUsage,
+        "output", outputFlagDefault, outputFlagUsage
+    );
 }
